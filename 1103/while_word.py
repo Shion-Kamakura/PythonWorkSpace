@@ -23,15 +23,32 @@ print(f"これまで覚えた単語：{wordList}")
 # import os
 # DATA_FILENAME = 'word.txt'
 
-# if os.path.isfile(DATA_FILENAME): ファイルがあるか確認
-#     ここからファイルを読み込む
-#     with open(DATA_FILENAME) as f:開いたファイルを[f]として扱う
-#         単語リストに格納
+# if os.path.isfile(DATA_FILENAME): #ファイルがあるか確認
+#    #ここからファイルを読み込む
+#     with open(DATA_FILENAME) as f:#開いたファイルを[f]として扱う
+
+#        # 単語リストに格納
 #         words_list = [word.strip() for word in f]
-#         strip()の時は空白文字を除去している
-#         ファイルがない時
+#         #strip()の時は空白文字を除去している
+#         #ファイルがない時
 # else:
-#     word_list = []リストの作成
+#     word_list = []#リストの作成
+
+
+# 続きを書く
+
+
+
+# #終了メッセージ
+# print('終了します')
+# print('これまでに覚えた単語：',words_list)
+
+# #ファイルに単語リストを書き込む
+# with open(DATA_FILENAME,'w') as f:
+#     for word in words_list:
+#         f.write(f'{word}\n')
+
+
 
 
 
