@@ -34,10 +34,18 @@ print(f"これまで覚えた単語：{wordList}")
 # else:
 #     word_list = []#リストの作成
 
-
-# 続きを書く
-
-
+# while True:
+#     a = input("単語を入力してください：") #aに入力値格納
+#     if a == "": #入力値が""(空)の場合
+#         break #breakで抜ける
+#     if a == 'LIST': #LISTと入力された時の処理
+#         print('単語リスト：',word_list) #単語が入っているリストを出力
+#         continue #continueで続ける
+#     if word_list == a: #入力された値がリストに存在してる場合
+#         print('既に登録済みです。')
+#         continue #continueで続ける
+#     else: #入力された値がリストに存在してない場合
+#         word_list.append(a) #入力値をリスト(word_list)に繋げている
 
 # #終了メッセージ
 # print('終了します')
