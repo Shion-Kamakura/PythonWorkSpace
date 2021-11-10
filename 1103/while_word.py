@@ -19,4 +19,19 @@ while True:
             wordList.append(word)
 print(f"これまで覚えた単語：{wordList}")
 
+# -----------------------------------------------------------------------------------------------
+# import os
+# DATA_FILENAME = 'word.txt'
+
+# if os.path.isfile(DATA_FILENAME): ファイルがあるか確認
+#     ここからファイルを読み込む
+#     with open(DATA_FILENAME) as f:開いたファイルを[f]として扱う
+#         単語リストに格納
+#         words_list = [word.strip() for word in f]
+#         strip()の時は空白文字を除去している
+#         ファイルがない時
+# else:
+#     word_list = []リストの作成
+
+
 
