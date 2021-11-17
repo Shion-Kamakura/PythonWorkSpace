@@ -1,16 +1,15 @@
 import os
-DATA_FILENAME = 'word.txt'
+import pickle
+DATA_FILENAME = 'word.pkl'
 
 if os.path.isfile(DATA_FILENAME): #ファイルがあるか確認
     #ここからファイルを読み込む
-    with open(DATA_FILENAME) as f:#開いたファイルを[f]として扱う
-
-        # 単語リストに格納
-        words_list = [word.strip() for word in f]
+    with open(DATA_FILENAME,'rb') as f:#開いたファイルを[f]として扱う
+        words_list = pickle.load(f)
         #strip()の時は空白文字を除去している
         #ファイルがない時
 else:
-    word_list = []#リストの作成
+    words_list = []#リストの作成
 
 while True:
     a = input("単語を入力してください：") #aに入力値格納
@@ -30,6 +29,5 @@ print('終了します')
 print('これまでに覚えた単語：',words_list)
 
 #ファイルに単語リストを書き込む
-with open(DATA_FILENAME,'w') as f:
-    for word in words_list:
-        f.write(f'{word}\n')
+with open(DATA_FILENAME,'wb') as f:
+    pickle.dump(words_list,f)
