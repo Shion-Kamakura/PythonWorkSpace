@@ -14,7 +14,7 @@ def list2int(s):
         else:
             return 0
     else:
-        return s
+        return None
         
 print(list2int(['5','ab','100',10,1]))
 print(list2int('100'))
